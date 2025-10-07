@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -400,3 +401,368 @@
 
 </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Serene Alpha Analytics LLP</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --brand-dark: #1A1A1A;
+            --brand-teal: #00A79D;
+            --brand-grey: #F5F5F5;
+            --brand-text: #333333;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: var(--brand-text);
+        }
+        h1, h2, h3, h4 {
+            font-family: 'Playfair Display', serif;
+            color: var(--brand-dark);
+        }
+        .bg-brand-dark { background-color: var(--brand-dark); }
+        .text-brand-teal { color: var(--brand-teal); }
+        .bg-brand-teal { background-color: var(--brand-teal); }
+        .bg-brand-grey { background-color: var(--brand-grey); }
+        .border-brand-teal { border-color: var(--brand-teal); }
+        
+        #back-to-top {
+            transition: opacity 0.3s, transform 0.3s;
+        }
+
+        /* Style for invalid input fields */
+        .invalid-field {
+            border-color: #ef4444; /* red-500 */
+            box-shadow: 0 0 0 2px rgba(239, 68, 68, 0.4); /* ring-red-400 */
+        }
+    </style>
+</head>
+<body class="bg-white">
+
+    <!-- Header -->
+    <header class="bg-white/90 backdrop-blur-lg sticky top-0 z-50 border-b border-gray-200">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-xl font-bold text-brand-dark">
+                <img src="images/logo.png" alt="Serene Alpha Analytics Logo" class="h-auto w-56">
+            </a>
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="index.html" class="text-lg nav-active text-gray-600 hover:text-brand-teal transition-colors">Home</a>
+                <a href="about.html" class="text-lg text-gray-600 hover:text-brand-teal transition-colors">About Us</a>
+                <a href="knowledge-hub.html" class="text-lg text-gray-600 hover:text-brand-teal transition-colors">Knowledge Hub</a>
+                <a href="resources.html" class="text-lg text-gray-600 hover:text-brand-teal transition-colors">Resources</a>
+                <a href="careers.html" class="text-lg text-gray-600 hover:text-brand-teal transition-colors">Careers</a>
+                <a href="faq.html" class="text-lg text-gray-600 hover:text-brand-teal transition-colors">FAQs</a>
+                <a href="contact.html" class="text-lg nav-active border-2 border-brand-teal text-brand-teal py-2 px-5 rounded-full hover:bg-brand-teal hover:text-brand-teal transition-colors duration-300">Contact Us</a>
+            </div>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-600 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden">
+            <a href="index.html" class="block text-gray-600 hover:text-brand-teal px-6 py-2">Home</a>
+            <a href="about.html" class="block text-gray-600 hover:text-brand-teal px-6 py-2">About Us</a>
+            <a href="knowledge-hub.html" class="block text-gray-600 hover:text-brand-teal px-6 py-2">Knowledge Hub</a>
+            <a href="resources.html" class="block text-gray-600 hover:text-brand-teal px-6 py-2">Resources</a>
+            <a href="careers.html" class="block text-gray-600 hover:text-brand-teal px-6 py-2">Careers</a>
+            <a href="faq.html" class="block text-gray-600 hover:text-brand-teal px-6 py-2">FAQs</a>
+            <a href="contact.html" class="block bg-brand-teal text-brand-teal mx-6 my-2 py-2 px-5 rounded-full text-center">Contact Us</a>
+        </div>
+    </header>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-brand-grey">
+        <div class="container mx-auto px-6">
+            <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
+                <!-- Left Side: Get in Touch -->
+                <div>
+                    <h2 class="text-3xl font-bold">Get in Touch</h2>
+                    <p class="mt-4 text-gray-600">We're here to help and answer any question you might have. We look forward to hearing from you.</p>
+
+                    <div class="mt-8 space-y-6">
+                        <!-- Visit Us -->
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 h-10 w-10 flex items-center justify-center bg-white rounded-full shadow">
+                                <svg class="w-6 h-6 text-brand-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-lg font-semibold text-brand-dark">Visit Us</h3>
+                                <p class="text-gray-600">Unit no.101, Ninex Time Centre, Golf Course Road, Sec-54, Gurugram-122003</p>
+                            </div>
+                        </div>
+                        <!-- Email Us -->
+                        <div class="flex items-start">
+                             <div class="flex-shrink-0 h-10 w-10 flex items-center justify-center bg-white rounded-full shadow">
+                                <svg class="w-6 h-6 text-brand-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-lg font-semibold text-brand-dark">Email Us</h3>
+                                <p class="text-gray-600">contact@serenealpha.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Side: Send a Message Form -->
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <h2 class="text-3xl font-bold">Send a Message</h2>
+                    <form id="contact-form" class="mt-6 space-y-6" novalidate>
+                        <div>
+                            <label for="your-name" class="block text-sm font-medium text-gray-700">Your Name <span class="text-red-500">*</span></label>
+                            <input type="text" name="entry.2005620554" id="your-name" required class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:border-brand-teal">
+                            <p class="text-red-500 text-xs mt-1 hidden">This field is required.</p>
+                        </div>
+                        <div>
+                            <label for="email-address" class="block text-sm font-medium text-gray-700">Email Address <span class="text-red-500">*</span></label>
+                            <input type="email" name="entry.1045781291" id="email-address" required class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:border-brand-teal">
+                            <p class="text-red-500 text-xs mt-1 hidden">Please enter a valid email address.</p>
+                        </div>
+                         <div>
+                            <label for="phone-number" class="block text-sm font-medium text-gray-700">Phone Number <span class="text-red-500">*</span></label>
+                            <input type="tel" name="entry.1166974658" id="phone-number" required class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:border-brand-teal">
+                            <p class="text-red-500 text-xs mt-1 hidden">Please enter a valid 10-digit phone number.</p>
+                        </div>
+                        <div>
+                            <label for="subject" class="block text-sm font-medium text-gray-700">Subject <span class="text-red-500">*</span></label>
+                            <input type="text" name="entry.1065046570" id="subject" required class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:border-brand-teal">
+                             <p class="text-red-500 text-xs mt-1 hidden">This field is required.</p>
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                            <textarea id="message" name="entry.839337160" rows="4" class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:border-brand-teal"></textarea>
+                        </div>
+                        <div>
+                            <button type="submit" id="submit-button" class="w-full flex justify-center py-3 px-4 border border-transparent rounded-md shadow-sm text-white bg-brand-teal hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-teal transition-opacity">
+                                Send Message
+                            </button>
+                        </div>
+                    </form>
+                    <div id="success-message" class="hidden mt-6 p-4 bg-green-100 text-green-800 rounded-md">
+                        <p>Thank you! Your message has been sent successfully.</p>
+                    </div>
+                     <div id="form-error-message" class="hidden mt-6 p-4 bg-red-100 text-red-800 rounded-md">
+                        <p>An error occurred. Please try again.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-brand-dark text-white relative pt-16">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+                <div class="md:col-span-2">
+                    <h4 class="text-lg font-semibold text-white mb-4">Fund Level Details</h4>
+                    <div class="text-sm text-gray-400 space-y-2">
+                        <p class="font-bold text-base text-white">SERENE ALPHA CAPITAL FUND-1</p>
+                        <p>BY SERENE ALPHA CAPITAL TRUST</p>
+                        <p class="text-xs my-2" style="letter-spacing: 0.2em;">SMART &middot; STEADY &middot; SERENE</p>
+                        <p>‘Serene Alpha Capital Trust’ is registered with SEBI as a Category II Alternative Investment Fund (Registration No.- ACL-8705)</p>
+                    </div>
+                    <hr class="my-6 border-gray-700">
+                    <h4 class="text-lg font-semibold text-white mb-4">Disclaimer</h4>
+                    <div class="text-xs text-gray-500 text-justify space-y-1">
+                        <p>By accessing this website, you acknowledge and confirm that you are seeking information voluntarily, without solicitation or inducement by the organization.
+                        Please note that no part of the content should be construed as an offer or solicitation to buy or sell any securities or make any investments or transactions. The information provided here is purely for informational purposes and should not be considered as investment advice.
+                        Any actions you take based on the content of this website are at your own risk and responsibility.</p>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4">Follow Us</h4>
+                    <div class="flex space-x-4">
+                      <!-- Twitter -->
+                      <a href="https://www.google.com" target="_blank" rel="noopener noreferrer"
+                         class="text-gray-400 hover:text-brand-teal transition transform hover:scale-110 duration-300">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                          <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.71v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path>
+                        </svg>
+                      </a>
+                      <!-- YouTube -->
+                      <a href="#" target="_blank" rel="noopener noreferrer"
+                         class="text-gray-400 hover:text-brand-teal transition transform hover:scale-110 duration-300">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                          <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.82v-7l6 3.5-6 3.5z"></path>
+                        </svg>
+                      </a>
+                  
+                      <!-- LinkedIn -->
+                      <a href="#" target="_blank" rel="noopener noreferrer"
+                         class="text-gray-400 hover:text-brand-teal transition transform hover:scale-110 duration-300">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                          <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path>
+                        </svg>
+                      </a>
+
+                      <!-- Whatsapp -->
+                      <a href="https://wa.me/1234567890?text=Hello%20Serene%20Alpha%20Analytics%20LLP,%20I%20would%20like%20to%20know%20more%20about%20your%20services." 
+                         target="_blank" rel="noopener noreferrer"
+                         class="text-gray-400 hover:text-brand-teal transition transform hover:scale-110 duration-300">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 .5C5.65.5.5 5.65.5 12c0 2.11.55 4.16 1.59 5.97L.5 23.5l5.72-1.59A11.46 11.46 0 0 0 12 23.5c6.35 0 11.5-5.15 11.5-11.5S18.35.5 12 .5zm0 20.9c-1.87 0-3.7-.5-5.3-1.46l-.38-.23-3.39.95.95-3.31-.25-.39A9.39 9.39 0 0 1 2.6 12c0-5.18 4.22-9.4 9.4-9.4 5.17 0 9.4 4.22 9.4 9.4s-4.23 9.4-9.4 9.4zm5.28-7.05c-.29-.15-1.72-.85-1.99-.95-.27-.1-.46-.15-.65.15-.2.29-.75.95-.92 1.14-.17.2-.34.22-.63.08-.29-.15-1.21-.45-2.3-1.43-.84-.75-1.41-1.67-1.58-1.95-.17-.29-.02-.45.13-.6.13-.13.29-.34.43-.51.14-.17.18-.29.27-.48.1-.2.05-.37-.03-.52-.08-.15-.65-1.57-.89-2.15-.23-.58-.47-.5-.64-.51l-.55-.01c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.49s1.06 2.87 1.21 3.07c.15.2 2.06 3.15 5 4.41.7.3 1.24.48 1.66.62.72.23 1.38.2 1.89.12.58-.09 1.76-.72 2.01-1.41.25-.7.25-1.3.18-1.41-.07-.11-.27-.2-.56-.35z"/>
+                          </svg>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                <div>
+                     <h4 class="text-lg font-semibold text-white mb-4">Contact Us</h4>
+                     <div class="text-sm text-gray-400 space-y-2">
+                        <p><strong>Email:</strong> info@serenealpha.com</p>
+                        <p><strong>Phone:</strong> +91 123 456 7890</p>
+                     </div>
+                </div>
+            </div>
+        </div>
+        <div class="border-t border-gray-700 mt-12">
+            <div class="container mx-auto px-6 py-6 text-center text-sm text-gray-500">
+                 <p>&copy; 2025 Serene Alpha Analytics LLP. All Rights Reserved.</p>
+            </div>
+        </div>
+
+        <!-- Back to top button -->
+        <button id="back-to-top" class="fixed bottom-8 right-8 bg-brand-teal text-white p-3 rounded-full shadow-lg hover:bg-opacity-90 transition opacity-0 transform translate-y-2 pointer-events-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"></path></svg>
+        </button>
+    </footer>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Mobile menu toggle
+            const menuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            if (menuButton) {
+                menuButton.addEventListener('click', function() {
+                    mobileMenu.classList.toggle('hidden');
+                });
+            }
+
+            // Back to top button
+            const backToTopButton = document.getElementById('back-to-top');
+            if (backToTopButton) {
+                 window.addEventListener('scroll', () => {
+                    if (window.pageYOffset > 300) {
+                        backToTopButton.classList.remove('opacity-0', 'translate-y-2', 'pointer-events-none');
+                    } else {
+                        backToTopButton.classList.add('opacity-0', 'translate-y-2', 'pointer-events-none');
+                    }
+                });
+
+                backToTopButton.addEventListener('click', () => {
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                });
+            }
+            
+            // Handle Form Submission with Validation
+            const form = document.getElementById('contact-form');
+            if (form) {
+                const formAction = 'https://docs.google.com/forms/u/0/d/e/1FAIpQLSdebDz3DIoAPpI57Z3SEJcmMJYyWO1TYTj7ZmIq9HNSIt76gQ/formResponse';
+                const submitButton = document.getElementById('submit-button');
+                
+                const inputs = {
+                    name: document.getElementById('your-name'),
+                    email: document.getElementById('email-address'),
+                    phone: document.getElementById('phone-number'),
+                    subject: document.getElementById('subject')
+                };
+
+                const errorMessages = {
+                    name: inputs.name.nextElementSibling,
+                    email: inputs.email.nextElementSibling,
+                    phone: inputs.phone.nextElementSibling,
+                    subject: inputs.subject.nextElementSibling
+                };
+
+                const successMessage = document.getElementById('success-message');
+                const formErrorMessage = document.getElementById('form-error-message');
+
+                const validateEmail = (email) => /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(String(email).toLowerCase());
+                const validatePhone = (phone) => /^\d{10}$/.test(phone);
+
+                form.addEventListener('submit', function (e) {
+                    e.preventDefault();
+                    let isValid = true;
+
+                    // Reset previous states
+                    Object.values(inputs).forEach(input => {
+                        input.classList.remove('invalid-field');
+                    });
+                    Object.values(errorMessages).forEach(msg => msg.classList.add('hidden'));
+                    successMessage.classList.add('hidden');
+                    formErrorMessage.classList.add('hidden');
+
+                    // Validation checks
+                    if (!inputs.name.value.trim()) {
+                        isValid = false;
+                        inputs.name.classList.add('invalid-field');
+                        errorMessages.name.classList.remove('hidden');
+                    }
+                    if (!inputs.subject.value.trim()) {
+                        isValid = false;
+                        inputs.subject.classList.add('invalid-field');
+                        errorMessages.subject.classList.remove('hidden');
+                    }
+                    if (!inputs.email.value.trim() || !validateEmail(inputs.email.value)) {
+                        isValid = false;
+                        inputs.email.classList.add('invalid-field');
+                        errorMessages.email.classList.remove('hidden');
+                    }
+                    if (!inputs.phone.value.trim() || !validatePhone(inputs.phone.value)) {
+                        isValid = false;
+                        inputs.phone.classList.add('invalid-field');
+                        errorMessages.phone.classList.remove('hidden');
+                    }
+
+                    if (!isValid) {
+                        return;
+                    }
+
+                    // Disable button and show loading state
+                    submitButton.disabled = true;
+                    submitButton.textContent = 'Sending...';
+                    submitButton.classList.add('opacity-50');
+
+                    const formData = new FormData(form);
+
+                    fetch(formAction, {
+                        method: 'POST',
+                        body: formData,
+                        mode: 'no-cors' 
+                    })
+                    .then(() => {
+                        form.classList.add('hidden');
+                        successMessage.classList.remove('hidden');
+                    })
+                    .catch(error => {
+                        console.error('Error submitting form:', error);
+                        formErrorMessage.classList.remove('hidden');
+                    })
+                    .finally(() => {
+                        // Re-enable button only if there was an error
+                        if (!successMessage.classList.contains('hidden')) {
+                             submitButton.disabled = false;
+                             submitButton.textContent = 'Send Message';
+                             submitButton.classList.remove('opacity-50');
+                        }
+                    });
+                });
+            }
+        });
+    </script>
+
+</body>
+</html>
+
+>>>>>>> 002285cb4b1cac6e35258d2bbd34a3662dd7a0cc

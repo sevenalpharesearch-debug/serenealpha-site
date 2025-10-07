@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -580,3 +581,572 @@
 </body>
 </html>
 
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serene Alpha Analytics LLP - SMART · STEADY · SERENE</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            /* Correct colors from your brand guide */
+            --brand-dark: #1A1A1A;
+            --brand-teal: #00A79D;
+            --brand-grey: #F5F5F5;
+            --brand-text: #333333;
+            --brand-light-text: #EAEAEA;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: var(--brand-text);
+        }
+        h1, h2, h3, h4 {
+            font-family: 'Playfair Display', serif;
+            color: var(--brand-dark);
+        }
+        .hero-section {
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            transition: background-image 1.5s cubic-bezier(0.4, 0, 0.2, 1); /* Transition for background */
+        }
+        /* New classes for slide backgrounds */
+        .hero-bg-1 {
+            background-image: linear-gradient(rgba(26, 26, 26, 0.6), rgba(26, 26, 26, 0.6)), url('images/hero-background.jpg');
+        }
+        .hero-bg-2 {
+            background-image: linear-gradient(rgba(26, 26, 26, 0.6), rgba(26, 26, 26, 0.6)), url('images/hero-background1.jpg');
+        }
+        .hero-bg-3 {
+            background-image: linear-gradient(rgba(26, 26, 26, 0.6), rgba(26, 26, 26, 0.6)), url('images/hero-background2.jpg');
+        }
+        .hero-section h2, .hero-section p, .hero-section li {
+            color: white;
+        }
+        .bg-brand-dark { background-color: var(--brand-dark); }
+        .text-brand-teal { color: var(--brand-teal); }
+        .bg-brand-teal { background-color: var(--brand-teal); }
+        .bg-brand-grey { background-color: var(--brand-grey); }
+        .border-brand-teal { border-color: var(--brand-teal); }
+
+        .group:hover .team-details {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        /* Active nav link style */
+        .nav-active {
+            color: var(--brand-teal) !important;
+            border-bottom: 2px solid var(--brand-teal);
+            padding-bottom: 2px;
+        }
+        
+        /* Slideshow styles */
+        .hero-slide {
+            transition: opacity 1.5s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+       
+        .hero-slide.active {
+            opacity: 1;
+            z-index: 10;
+        }
+        
+        /* Slide content animation */
+        .slide-content > * {
+            transition: opacity 0.8s ease-out 0.4s, transform 0.8s ease-out 0.4s;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        .hero-slide.active .slide-content > * {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .hero-slide.active .slide-content > *:nth-child(2) { transition-delay: 0.6s; }
+        .hero-slide.active .slide-content > *:nth-child(3) { transition-delay: 0.8s; }
+        
+       /* In-place expansion styles */
+        .slide-text {
+            max-height: 120px;
+            overflow: hidden;
+            transition: max-height 0.7s ease-in-out;
+            position: relative;
+        }
+        .slide-text.expanded {
+            max-height: 1000px;
+        }
+        
+        #back-to-top {
+            transition: opacity 0.3s, transform 0.3s;
+        }
+    </style>
+</head>
+<body class="bg-white">
+
+    <!-- Header -->
+    <header class="bg-white/90 backdrop-blur-lg sticky top-0 z-50 border-b border-gray-200">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-xl font-bold text-brand-dark">
+                <img src="images/logo.png" alt="Serene Alpha Analytics Logo" class="h-auto w-56">
+            </a>
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="index.html" class="text-lg nav-active text-gray-600 hover:text-brand-teal transition-colors">Home</a>
+                <a href="about.html" class="text-lg text-gray-600 hover:text-brand-teal transition-colors">About Us</a>
+                <a href="knowledge-hub.html" class="text-lg text-gray-600 hover:text-brand-teal transition-colors">Knowledge Hub</a>
+                <a href="resources.html" class="text-lg text-gray-600 hover:text-brand-teal transition-colors">Resources</a>
+                <a href="careers.html" class="text-lg text-gray-600 hover:text-brand-teal transition-colors">Careers</a>
+                <a href="faq.html" class="text-lg text-gray-600 hover:text-brand-teal transition-colors">FAQs</a>
+                <a href="contact.html" class="text-lg border-2 border-brand-teal text-brand-teal py-2 px-5 rounded-full hover:bg-brand-teal hover:text-brand-teal transition-colors duration-300">Contact Us</a>
+            </div>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-600 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden">
+            <a href="index.html" class="block text-brand-teal px-6 py-2">Home</a>
+            <a href="about.html" class="block text-gray-600 hover:text-brand-teal px-6 py-2">About Us</a>
+            <a href="knowledge-hub.html" class="block text-gray-600 hover:text-brand-teal px-6 py-2">Knowledge Hub</a>
+            <a href="resources.html" class="block text-gray-600 hover:text-brand-teal px-6 py-2">Resources</a>
+            <a href="careers.html" class="block text-gray-600 hover:text-brand-teal px-6 py-2">Careers</a>
+            <a href="faq.html" class="block text-gray-600 hover:text-brand-teal px-6 py-2">FAQs</a>
+            <a href="contact.html" class="block bg-brand-teal text-white mx-6 my-2 py-2 px-5 rounded-full text-center">Contact Us</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section relative h-[70vh] md:h-[90vh] min-h-[500px] text-white overflow-hidden">
+        
+        <!-- Slide Containers -->
+        <div class="relative w-full h-full">
+            <!-- Slide 1 -->
+            <div class="hero-slide absolute inset-0 w-full h-full opacity-0">
+                <div class="relative z-10 container mx-auto px-6 h-full flex flex-col justify-center items-center text-justify">
+                    <div class="slide-content max-w-4xl">
+                        <h2 class="text-4xl md:text-6xl font-bold text-left">Why India: The Growth Story for the Next Decade</h2>
+                        <div class="slide-text mt-6 text-l text-brand-light-text">
+                            <p>India stands at a pivotal moment in its history, positioned to play a central role in the global economic landscape. As the world's fastest-growing major economy, India presents an exceptional growth story, underpinned by a confluence of unique factors that create a compelling narrative for long-term investment. Projections indicate that India’s GDP is set to become the third-largest in the world by 2030, reaching an estimated $7.3 trillion, with even more ambitious aspirations of achieving a $30 trillion economy by 2047. This trajectory is supported by India’s dynamic demographic profile, with a median age of just 28 years. This youthful population is not only a robust consumer base but also a driving force for innovation and entrepreneurship. India’s growth is further bolstered by ongoing infrastructure development initiatives, such as the National Infrastructure Pipeline (NIP) and the Production-Linked Incentive (PLI) schemes, which aim to position the country as a global manufacturing hub. These large-scale efforts are complemented by targeted government reforms, creating a conducive environment for sustained economic progress.</p>
+                        </div>
+                        <button class="read-more-btn mt-4 text-brand-teal font-semibold hover:underline">Read More</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="hero-slide absolute inset-0 w-full h-full opacity-0">
+                 <div class="relative z-10 container mx-auto px-6 h-full flex flex-col justify-center items-center text-justify">
+                    <div class="slide-content max-w-4xl">
+                        <h2 class="text-4xl md:text-6xl font-bold text-left">Key growth sectors driving India’s transformation include:</h2>
+                         <div class="slide-text mt-6 text-lg text-brand-light-text text-left text-justify">
+                            <ul class="space-y-3">
+                                <li><strong>Renewable Energy:</strong> India is making significant strides in its energy transition, with ambitious plans to become a global leader in solar and wind energy. The nation aims to achieve 500 GW of non-fossil fuel-based power capacity by 2030, positioning itself as a key player in the global renewable energy sector.</li>
+                                <li><strong>Electronics Manufacturing:</strong> India has rapidly ascended to become the second-largest mobile phone manufacturer in the world, with a burgeoning electronics export market. This sector is poised for sustained growth as India capitalizes on its manufacturing potential.</li>
+                                <li><strong>Semiconductors:</strong> The India Semiconductor Mission (ISM), backed by substantial government support, is setting the stage for India’s foray into semiconductor manufacturing. This strategic shift is expected to create both geopolitical and economic advantages for the country, making it a critical player in the global supply chain.</li>
+                            </ul>
+                            <p class="mt-4 text-left">These sectors are just a glimpse of the broader transformation taking place across India’s economy. As the country continues to evolve, new growth themes will emerge, driven by technological advancements, policy reforms, and global shifts in demand. India's growth story will be shaped by multiple sectors, each creating fresh opportunities for investors.</p>
+                        </div>
+                        <button class="read-more-btn mt-4 text-brand-teal font-semibold hover:underline">Read More</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="hero-slide absolute inset-0 w-full h-full opacity-0">
+                 <div class="relative z-10 container mx-auto px-6 h-full flex flex-col justify-center items-center text-justify">
+                    <div class="slide-content max-w-4xl">
+                        <h2 class="text-4xl md:text-6xl font-bold text-left">Why Serene Alpha is Your Ideal Partner to Navigate India’s Growth</h2>
+                        <div class="slide-text mt-6 text-l text-brand-light-text">
+                            <p>At Serene Alpha, we are uniquely positioned to capitalize on India’s growth story. As a SEBI-registered Category II AIF, we employ a disciplined, data-driven approach to investment, identifying opportunities that align with India’s long-term trajectory. Our investment philosophy is anchored in high-growth sectors such as renewable energy, electronics manufacturing, and emerging technologies, which are poised to shape the country’s future. However, these are merely examples. As India's economy continues to diversify, we remain agile and proactive in identifying new growth sectors that will emerge over the years.</p>
+                            <p class="mt-4">Our team of seasoned professionals, with decades of experience in finance, strategy, and macroeconomic analysis, brings together deep industry insights and advanced data analytics to identify undervalued opportunities within these high-growth sectors. Through the use of machine learning models and rigorous due diligence, we continuously seek companies with scalable business models, strong governance, and clear industry tailwinds.</p>
+                            <p class="mt-4">We understand the evolving macroeconomic trends driving India’s transformation, and we strategically invest in companies that are riding these secular growth trends. By leveraging advanced risk management practices, we aim to ensure long-term value creation for our investors. With Serene Alpha, investors gain access to a well-structured investment framework designed to capture India’s growth potential. Through our systematic and disciplined approach, we help investors stay ahead of emerging themes and capitalize on new opportunities as they arise. We invite you to join us in unlocking the immense opportunities that lie ahead in India’s future.</p>
+                        </div>
+                        <button class="read-more-btn mt-4 text-brand-teal font-semibold hover:underline">Read More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="hero-dots" class="absolute bottom-8 left-1/2 -translate-x-1.2 z-20 flex space-x-3"></div>
+    </section>
+
+<!-- About Us Section -->
+<section id="about" class="py-20 bg-gradient-to-b from-white to-gray-50">
+    <div class="container mx-auto px-6">
+      <div class="text-center">
+        <h3 class="text-4xl font-extrabold text-brand-dark tracking-tight">
+          Forging Lasting Value Through <span class="text-brand-teal">Insight</span> & <span class="text-brand-teal">Discipline</span>
+        </h3>
+        <p class="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
+          A philosophy built on intelligence, consistency, and clarity.
+        </p>
+      </div>
+  
+      <div class="mt-16 grid grid-cols-1 md:grid-cols-3 gap-10">
+        <!-- SMART -->
+        <div class="bg-brand-grey p-8 rounded-lg text-center transition duration-300 hover:bg-white hover:shadow-xl hover:-translate-y-2">
+          <div class="flex justify-center items-center h-16 w-16 bg-brand-grey rounded-full mx-auto transition duration-300 hover:bg-brand-teal">
+            <svg class="w-8 h-8 text-brand-teal hover:text-brand-teal transition duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+            </svg>
+          </div>
+          <h3 class="text-2xl font-bold mt-6 text-brand-dark">SMART</h3>
+          <p class="mt-4 text-gray-600 leading-relaxed">
+            Leveraging multi-layered data integration and advanced analytics to make informed, intelligent investment decisions.
+          </p>
+        </div>
+  
+        <!-- STEADY -->
+        <div class="bg-brand-grey p-8 rounded-lg text-center transition duration-300 hover:bg-white hover:shadow-xl hover:-translate-y-2">
+          <div class="flex justify-center items-center h-16 w-16 bg-brand-grey rounded-full mx-auto transition duration-300 hover:bg-brand-teal">
+            <svg class="w-8 h-8 text-brand-teal hover:text-brand-teal transition duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"></path>
+            </svg>
+          </div>
+          <h3 class="text-2xl font-bold mt-6 text-brand-dark">STEADY</h3>
+          <p class="mt-4 text-gray-600 leading-relaxed">
+            Adhering to a disciplined framework focused on fundamentals, consistent profitability, and long-term compounding.
+          </p>
+        </div>
+  
+        <!-- SERENE -->
+        <div class="bg-brand-grey p-8 rounded-lg text-center transition duration-300 hover:bg-white hover:shadow-xl hover:-translate-y-2">
+          <div class="flex justify-center items-center h-16 w-16 bg-brand-grey rounded-full mx-auto transition duration-300 hover:bg-brand-teal">
+            <svg class="w-8 h-8 text-brand-teal hover:text-brand-teal transition duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"></path>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+          </div>
+          <h3 class="text-2xl font-bold mt-6 text-brand-dark">SERENE</h3>
+          <p class="mt-4 text-gray-600 leading-relaxed">
+            Maintaining a calm, principled approach that avoids speculative trends and prioritizes clean governance and transparency.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+    <!-- Data Snapshot Section (Hidden) -->
+    <section id="snapshot" class="py-20 bg-brand-grey hidden">
+        <!-- Content remains hidden as per original file -->
+    </section>
+
+    <!-- Fund Characteristics Section -->
+    <section id="characteristics" class="py-20 bg-brand-grey">
+        <div class="container mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto">
+                <h2 class="text-4xl font-bold text-brand-dark">Fund Characteristics</h2>
+                <p class="mt-4 text-lg text-gray-600">A disciplined and strategic framework designed for sustainable growth and robust governance.</p>
+            </div>
+            <div class="mt-16 grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Card 1: Category II AIF -->
+                <div class="bg-white p-8 rounded-lg shadow-lg flex items-start space-x-6 transform transition duration-300 hover:-translate-y-2 hover:shadow-2xl">
+                    <div class="flex-shrink-0 h-12 w-12 flex items-center justify-center bg-teal-100 text-brand-teal rounded-full">
+                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-brand-dark">Category II AIF, Close-Ended Structure</h3>
+                        <p class="mt-2 text-gray-600 text-justify">The Fund is registered with SEBI as a Category II Alternative Investment Fund. It is close-ended with a tenure of 7 years, extendable by 2 years with contributor consent.</p>
+                    </div>
+                </div>
+
+                <!-- Card 2: Sector-Agnostic -->
+                <div class="bg-white p-8 rounded-lg shadow-lg flex items-start space-x-6 transform transition duration-300 hover:-translate-y-2 hover:shadow-2xl">
+                     <div class="flex-shrink-0 h-12 w-12 flex items-center justify-center bg-teal-100 text-brand-teal rounded-full">
+                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z"></path></svg>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-brand-dark">Sector-Agnostic, Flexible Allocation</h3>
+                        <p class="mt-2 text-gray-600 text-justify">The Fund follows a sector-agnostic approach, investing across equity, debt, quasi-equity, and equity-linked instruments, with flexibility to structure capital depending on portfolio company needs.</p>
+                    </div>
+                </div>
+                
+                <!-- Card 3: Sunrise Sectors -->
+                <div class="bg-white p-8 rounded-lg shadow-lg flex items-start space-x-6 transform transition duration-300 hover:-translate-y-2 hover:shadow-2xl">
+                     <div class="flex-shrink-0 h-12 w-12 flex items-center justify-center bg-teal-100 text-brand-teal rounded-full">
+                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path></svg>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-brand-dark">Focus on Emerging & Sunrise Sectors</h3>
+                        <p class="mt-2 text-gray-600 text-justify">While agnostic, the strategy emphasizes opportunities in sunrise industries such as semiconductors, renewable energy, defense, green hydrogen, and electronics manufacturing, alongside traditional sectors.</p>
+                    </div>
+                </div>
+
+                <!-- Card 4: Research-Driven -->
+                <div class="bg-white p-8 rounded-lg shadow-lg flex items-start space-x-6 transform transition duration-300 hover:-translate-y-2 hover:shadow-2xl">
+                     <div class="flex-shrink-0 h-12 w-12 flex items-center justify-center bg-teal-100 text-brand-teal rounded-full">
+                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-brand-dark">Research-Driven, Risk-Controlled Strategy</h3>
+                        <p class="mt-2 text-gray-600 text-justify">Investments are guided by the proprietary VISION framework (Visionary leadership, Industry growth, Scalability, Integrity of earnings, Optimal policy support, and Net balance sheet strength). The Fund aims to generate equity-like returns while keeping risk under control.</p>
+                    </div>
+                </div>
+                
+                <!-- Card 5: Governance -->
+                <div class="bg-white p-8 rounded-lg shadow-lg flex items-start space-x-6 md:col-span-2 transform transition duration-300 hover:-translate-y-2 hover:shadow-2xl">
+                     <div class="flex-shrink-0 h-12 w-12 flex items-center justify-center bg-teal-100 text-brand-teal rounded-full">
+                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-brand-dark">Institutional-Grade Governance & Alignment</h3>
+                        <p class="mt-2 text-gray-600 text-justify">The Sponsor commits a continuing interest of 2.5% of the corpus (up to ₹5 Cr), ensuring alignment. Investments undergo rigorous due diligence, active monitoring, and strategic exit planning (IPO, M&A, or secondary sale) with the objective of creating long-term value for stakeholders.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-brand-dark text-white relative pt-16">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+                <div class="md:col-span-2">
+                    <h4 class="text-lg font-semibold text-white mb-4">Fund Level Details</h4>
+                    <div class="text-sm text-gray-400 space-y-2">
+                        <p class="font-bold text-base text-white">SERENE ALPHA CAPITAL FUND-1</p>
+                        <p>BY SERENE ALPHA CAPITAL TRUST</p>
+                        <p class="text-xs my-2" style="letter-spacing: 0.2em;">SMART &middot; STEADY &middot; SERENE</p>
+                        <p>‘Serene Alpha Capital Trust’ is registered with SEBI as a Category II Alternative Investment Fund (Registration No.- ACL-8705)</p>
+                    </div>
+                    <hr class="my-6 border-gray-700">
+                    <h4 class="text-lg font-semibold text-white mb-4">Disclaimer</h4>
+                    <div class="text-xs text-gray-500 text-justify space-y-1">
+                        <p>By accessing this website, you acknowledge and confirm that you are seeking information voluntarily, without solicitation or inducement by the organization.
+                        Please note that no part of the content should be construed as an offer or solicitation to buy or sell any securities or make any investments or transactions. The information provided here is purely for informational purposes and should not be considered as investment advice.
+                        Any actions you take based on the content of this website are at your own risk and responsibility.</p>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4">Follow Us</h4>
+                    <div class="flex space-x-4">
+                      <!-- Twitter -->
+                      <a href="https://www.google.com" target="_blank" rel="noopener noreferrer"
+                         class="text-gray-400 hover:text-brand-teal transition transform hover:scale-110 duration-300">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                          <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.71v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path>
+                        </svg>
+                      </a>
+                      <!-- YouTube -->
+                      <a href="#" target="_blank" rel="noopener noreferrer"
+                         class="text-gray-400 hover:text-brand-teal transition transform hover:scale-110 duration-300">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                          <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.82v-7l6 3.5-6 3.5z"></path>
+                        </svg>
+                      </a>
+                  
+                      <!-- LinkedIn -->
+                      <a href="#" target="_blank" rel="noopener noreferrer"
+                         class="text-gray-400 hover:text-brand-teal transition transform hover:scale-110 duration-300">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                          <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path>
+                        </svg>
+                      </a>
+
+                      <!-- Whatsapp -->
+                      <a href="https://wa.me/1234567890?text=Hello%20Serene%20Alpha%20Analytics%20LLP,%20I%20would%20like%20to%20know%20more%20about%20your%20services." 
+                         target="_blank" rel="noopener noreferrer"
+                         class="text-gray-400 hover:text-brand-teal transition transform hover:scale-110 duration-300">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 .5C5.65.5.5 5.65.5 12c0 2.11.55 4.16 1.59 5.97L.5 23.5l5.72-1.59A11.46 11.46 0 0 0 12 23.5c6.35 0 11.5-5.15 11.5-11.5S18.35.5 12 .5zm0 20.9c-1.87 0-3.7-.5-5.3-1.46l-.38-.23-3.39.95.95-3.31-.25-.39A9.39 9.39 0 0 1 2.6 12c0-5.18 4.22-9.4 9.4-9.4 5.17 0 9.4 4.22 9.4 9.4s-4.23 9.4-9.4 9.4zm5.28-7.05c-.29-.15-1.72-.85-1.99-.95-.27-.1-.46-.15-.65.15-.2.29-.75.95-.92 1.14-.17.2-.34.22-.63.08-.29-.15-1.21-.45-2.3-1.43-.84-.75-1.41-1.67-1.58-1.95-.17-.29-.02-.45.13-.6.13-.13.29-.34.43-.51.14-.17.18-.29.27-.48.1-.2.05-.37-.03-.52-.08-.15-.65-1.57-.89-2.15-.23-.58-.47-.5-.64-.51l-.55-.01c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.49s1.06 2.87 1.21 3.07c.15.2 2.06 3.15 5 4.41.7.3 1.24.48 1.66.62.72.23 1.38.2 1.89.12.58-.09 1.76-.72 2.01-1.41.25-.7.25-1.3.18-1.41-.07-.11-.27-.2-.56-.35z"/>
+                          </svg>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                <div>
+                     <h4 class="text-lg font-semibold text-white mb-4">Contact Us</h4>
+                     <div class="text-sm text-gray-400 space-y-2">
+                        <p><strong>Email:</strong> info@serenealpha.com</p>
+                        <p><strong>Phone:</strong> +91 123 456 7890</p>
+                     </div>
+                </div>
+            </div>
+        </div>
+        <div class="border-t border-gray-700 mt-12">
+            <div class="container mx-auto px-6 py-6 text-center text-sm text-gray-500">
+                 <p>&copy; 2025 Serene Alpha Analytics LLP. All Rights Reserved.</p>
+            </div>
+        </div>
+
+        <!-- Back to top button -->
+        <button id="back-to-top" class="fixed bottom-8 right-8 bg-brand-teal text-white p-3 rounded-full shadow-lg hover:bg-opacity-90 transition opacity-0 transform translate-y-2 pointer-events-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"></path></svg>
+        </button>
+    </footer>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Mobile menu toggle
+            const menuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            if (menuButton) {
+                menuButton.addEventListener('click', function() {
+                    mobileMenu.classList.toggle('hidden');
+                });
+            }
+
+            // Hero Slideshow
+            const slides = document.querySelectorAll('.hero-slide');
+            const dotsContainer = document.getElementById('hero-dots');
+            const heroSection = document.getElementById('hero'); // Get hero section element
+            const backgroundClasses = ['hero-bg-1', 'hero-bg-2', 'hero-bg-3']; // Array of background classes
+            let currentSlide = 0;
+            let slideInterval;
+
+            function createDots() {
+                if (!dotsContainer) return;
+                slides.forEach((_, i) => {
+                    const dot = document.createElement('button');
+                    dot.classList.add('w-3', 'h-3', 'rounded-full', 'transition-colors', 'duration-300', 'bg-white/50', 'hover:bg-white');
+                    dot.addEventListener('click', () => {
+                        goToSlide(i);
+                        resetInterval();
+                    });
+                    dotsContainer.appendChild(dot);
+                });
+            }
+
+            function updateDots() {
+                if (!dotsContainer) return;
+                const dots = dotsContainer.children;
+                for (let i = 0; i < dots.length; i++) {
+                    dots[i].classList.toggle('bg-white', i === currentSlide);
+                    dots[i].classList.toggle('bg-white/50', i !== currentSlide);
+                }
+            }
+
+            function goToSlide(n) {
+                if(slides.length === 0) return;
+
+                if (heroSection) {
+                    // Remove the previous background class
+                    heroSection.classList.remove(backgroundClasses[currentSlide]);
+                }
+                
+                slides[currentSlide].classList.remove('active');
+                currentSlide = (n + slides.length) % slides.length;
+                slides[currentSlide].classList.add('active');
+
+                if (heroSection) {
+                    // Add the new background class
+                    heroSection.classList.add(backgroundClasses[currentSlide]);
+                }
+                updateDots();
+            }
+
+            function nextSlide() {
+                goToSlide(currentSlide + 1);
+            }
+            
+            function startInterval() {
+                clearInterval(slideInterval);
+                slideInterval = setInterval(nextSlide, 5000);
+            }
+
+            function resetInterval() {
+                 clearInterval(slideInterval);
+                 startInterval();
+            }
+
+            if (heroSection) {
+                heroSection.addEventListener('mouseenter', () => clearInterval(slideInterval));
+                heroSection.addEventListener('mouseleave', () => startInterval());
+            }
+
+            if (slides.length > 0) {
+                if (heroSection) {
+                     heroSection.classList.add(backgroundClasses[0]); // Set the initial background
+                }
+                createDots();
+                slides[0].classList.add('active');
+                updateDots();
+                startInterval();
+            }
+
+            // In-place expansion logic
+            const readMoreBtns = document.querySelectorAll('.read-more-btn');
+            readMoreBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const slideText = btn.previousElementSibling;
+                    const isExpanded = slideText.classList.toggle('expanded');
+                    btn.textContent = isExpanded ? 'Read Less' : 'Read More';
+
+                    if (isExpanded) {
+                        clearInterval(slideInterval); // Pause slideshow
+                    } else {
+                        startInterval(); // Resume slideshow
+                    }
+                });
+            });
+            
+            // Active nav link on scroll
+            const sections = document.querySelectorAll('section[id]');
+            const navLinks = document.querySelectorAll('.nav-link');
+
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.4
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                let isAnySectionIntersecting = false;
+                 entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        isAnySectionIntersecting = true;
+                        const id = entry.target.getAttribute('id');
+                        navLinks.forEach(link => {
+                            link.classList.remove('nav-active');
+                            if (link.getAttribute('href') === `#${id}`) {
+                                link.classList.add('nav-active');
+                            }
+                        });
+                    }
+                });
+
+                if(!isAnySectionIntersecting && window.pageYOffset < 200){
+                     navLinks.forEach(link => {
+                        link.classList.remove('nav-active');
+                        if (link.getAttribute('href') === '#hero') {
+                            link.classList.add('nav-active');
+                        }
+                    });
+                }
+            }, observerOptions);
+
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+
+            // Back to top button
+            const backToTopButton = document.getElementById('back-to-top');
+            if (backToTopButton) {
+                 window.addEventListener('scroll', () => {
+                    if (window.pageYOffset > 300) { // Show button after 300px of scroll
+                        backToTopButton.classList.remove('opacity-0', 'translate-y-2', 'pointer-events-none');
+                    } else {
+                        backToTopButton.classList.add('opacity-0', 'translate-y-2', 'pointer-events-none');
+                    }
+                });
+
+                backToTopButton.addEventListener('click', () => {
+                    window.scrollTo({
+                        top: 0,
+                        behavior: 'smooth'
+                    });
+                });
+            }
+        });
+    </script>
+
+</body>
+</html>
+>>>>>>> 002285cb4b1cac6e35258d2bbd34a3662dd7a0cc

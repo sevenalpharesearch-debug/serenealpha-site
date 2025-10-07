@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -319,3 +320,326 @@
     </script>
 </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs - Serene Alpha Analytics LLP</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --brand-dark: #1A1A1A;
+            --brand-teal: #00A79D;
+            --brand-grey: #F5F5F5;
+            --brand-text: #333333;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: var(--brand-text);
+        }
+        h1, h2, h3, h4 {
+            font-family: 'Playfair Display', serif;
+            color: var(--brand-dark);
+        }
+        .faq-hero-section {
+            background-image: linear-gradient(rgba(26, 26, 26, 0.7), rgba(26, 26, 26, 0.7)), url('images/hero-background.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .bg-brand-dark { background-color: var(--brand-dark); }
+        .text-brand-teal { color: var(--brand-teal); }
+        .bg-brand-teal { background-color: var(--brand-teal); }
+        .bg-brand-grey { background-color: var(--brand-grey); }
+        .border-brand-teal { border-color: var(--brand-teal); }
+        
+        #back-to-top {
+            transition: opacity 0.3s, transform 0.3s;
+        }
+        .nav-active {
+            color: var(--brand-teal) !important;
+            border-bottom: 2px solid var(--brand-teal);
+            padding-bottom: 2px;
+        }
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease-in-out, padding 0.5s ease-in-out;
+        }
+        .faq-item.active .faq-answer {
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
+         .faq-item.active .faq-icon {
+            transform: rotate(45deg);
+        }
+        .faq-icon {
+            transition: transform 0.3s ease-in-out;
+        }
+    </style>
+</head>
+<body class="bg-white">
+
+    <!-- Header -->
+    <header class="bg-white/90 backdrop-blur-lg sticky top-0 z-50 border-b border-gray-200">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-xl font-bold text-brand-dark">
+                <img src="images/logo.png" alt="Serene Alpha Analytics Logo" class="h-auto w-56">
+            </a>
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="index.html" class="text-lg text-gray-600 hover:text-brand-teal transition-colors">Home</a>
+                <a href="about.html" class="text-lg text-gray-600 hover:text-brand-teal transition-colors">About Us</a>
+                <a href="knowledge-hub.html" class="text-lg text-gray-600 hover:text-brand-teal transition-colors">Knowledge Hub</a>
+                <a href="resources.html" class="text-lg text-gray-600 hover:text-brand-teal transition-colors">Resources</a>
+                <a href="careers.html" class="text-lg text-gray-600 hover:text-brand-teal transition-colors">Careers</a>
+                <a href="faq.html" class="text-lg nav-active text-gray-600 hover:text-brand-teal transition-colors">FAQs</a>
+                <a href="contact.html" class="text-lg border-2 border-brand-teal text-brand-teal py-2 px-5 rounded-full hover:bg-brand-teal hover:text-brand-teal transition-colors duration-300">Contact Us</a>
+            </div>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-600 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden">
+            <a href="index.html" class="block text-gray-600 hover:text-brand-teal px-6 py-2">Home</a>
+            <a href="about.html" class="block text-gray-600 hover:text-brand-teal px-6 py-2">About Us</a>
+            <a href="knowledge-hub.html" class="block text-gray-600 hover:text-brand-teal px-6 py-2">Knowledge Hub</a>
+            <a href="resources.html" class="block text-gray-600 hover:text-brand-teal px-6 py-2">Resources</a>
+            <a href="careers.html" class="block text-gray-600 hover:text-brand-teal px-6 py-2">Careers</a>
+            <a href="faq.html" class="block text-brand-teal px-6 py-2">FAQs</a>
+            <a href="contact.html" class="block bg-brand-teal text-white mx-6 my-2 py-2 px-5 rounded-full text-center">Contact Us</a>
+        </div>
+    </header>
+
+    <!-- FAQ Hero Section -->
+    <section class="faq-hero-section relative h-[40vh] min-h-[300px] flex items-center justify-center text-white">
+        <div class="relative z-10 text-center">
+            <h1 class="text-5xl md:text-7xl font-bold text-white">Frequently Asked Questions</h1>
+        </div>
+    </section>
+    
+    <!-- FAQ Section -->
+    <section id="faq-content" class="py-20 bg-brand-grey">
+        <div class="container mx-auto px-6">
+            <div id="faq-accordion" class="max-w-4xl mx-auto space-y-4">
+                <!-- FAQ Items will be dynamically generated by script -->
+            </div>
+        </div>
+    </section>
+
+     <!-- Footer -->
+     <footer class="bg-brand-dark text-white relative pt-16">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+                <div class="md:col-span-2">
+                    <h4 class="text-lg font-semibold text-white mb-4">Fund Level Details</h4>
+                    <div class="text-sm text-gray-400 space-y-2">
+                        <p class="font-bold text-base text-white">SERENE ALPHA CAPITAL FUND-1</p>
+                        <p>BY SERENE ALPHA CAPITAL TRUST</p>
+                        <p class="text-xs my-2" style="letter-spacing: 0.2em;">SMART &middot; STEADY &middot; SERENE</p>
+                        <p>‘Serene Alpha Capital Trust’ is registered with SEBI as a Category II Alternative Investment Fund (Registration No.- ACL-8705)</p>
+                    </div>
+                    <hr class="my-6 border-gray-700">
+                    <h4 class="text-lg font-semibold text-white mb-4">Disclaimer</h4>
+                    <div class="text-xs text-gray-500 text-justify space-y-1">
+                        <p>By accessing this website, you acknowledge and confirm that you are seeking information voluntarily, without solicitation or inducement by the organization.
+                        Please note that no part of the content should be construed as an offer or solicitation to buy or sell any securities or make any investments or transactions. The information provided here is purely for informational purposes and should not be considered as investment advice.
+                        Any actions you take based on the content of this website are at your own risk and responsibility.</p>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4">Follow Us</h4>
+                    <div class="flex space-x-4">
+                      <!-- Twitter -->
+                      <a href="https://www.google.com" target="_blank" rel="noopener noreferrer"
+                         class="text-gray-400 hover:text-brand-teal transition transform hover:scale-110 duration-300">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                          <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.71v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path>
+                        </svg>
+                      </a>
+                      <!-- YouTube -->
+                      <a href="#" target="_blank" rel="noopener noreferrer"
+                         class="text-gray-400 hover:text-brand-teal transition transform hover:scale-110 duration-300">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                          <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.82v-7l6 3.5-6 3.5z"></path>
+                        </svg>
+                      </a>
+                  
+                      <!-- LinkedIn -->
+                      <a href="#" target="_blank" rel="noopener noreferrer"
+                         class="text-gray-400 hover:text-brand-teal transition transform hover:scale-110 duration-300">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                          <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path>
+                        </svg>
+                      </a>
+
+                      <!-- Whatsapp -->
+                      <a href="https://wa.me/1234567890?text=Hello%20Serene%20Alpha%20Analytics%20LLP,%20I%20would%20like%20to%20know%20more%20about%20your%20services." 
+                         target="_blank" rel="noopener noreferrer"
+                         class="text-gray-400 hover:text-brand-teal transition transform hover:scale-110 duration-300">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 .5C5.65.5.5 5.65.5 12c0 2.11.55 4.16 1.59 5.97L.5 23.5l5.72-1.59A11.46 11.46 0 0 0 12 23.5c6.35 0 11.5-5.15 11.5-11.5S18.35.5 12 .5zm0 20.9c-1.87 0-3.7-.5-5.3-1.46l-.38-.23-3.39.95.95-3.31-.25-.39A9.39 9.39 0 0 1 2.6 12c0-5.18 4.22-9.4 9.4-9.4 5.17 0 9.4 4.22 9.4 9.4s-4.23 9.4-9.4 9.4zm5.28-7.05c-.29-.15-1.72-.85-1.99-.95-.27-.1-.46-.15-.65.15-.2.29-.75.95-.92 1.14-.17.2-.34.22-.63.08-.29-.15-1.21-.45-2.3-1.43-.84-.75-1.41-1.67-1.58-1.95-.17-.29-.02-.45.13-.6.13-.13.29-.34.43-.51.14-.17.18-.29.27-.48.1-.2.05-.37-.03-.52-.08-.15-.65-1.57-.89-2.15-.23-.58-.47-.5-.64-.51l-.55-.01c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.49s1.06 2.87 1.21 3.07c.15.2 2.06 3.15 5 4.41.7.3 1.24.48 1.66.62.72.23 1.38.2 1.89.12.58-.09 1.76-.72 2.01-1.41.25-.7.25-1.3.18-1.41-.07-.11-.27-.2-.56-.35z"/>
+                          </svg>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                <div>
+                     <h4 class="text-lg font-semibold text-white mb-4">Contact Us</h4>
+                     <div class="text-sm text-gray-400 space-y-2">
+                        <p><strong>Email:</strong> info@serenealpha.com</p>
+                        <p><strong>Phone:</strong> +91 123 456 7890</p>
+                     </div>
+                </div>
+            </div>
+        </div>
+        <div class="border-t border-gray-700 mt-12">
+            <div class="container mx-auto px-6 py-6 text-center text-sm text-gray-500">
+                 <p>&copy; 2025 Serene Alpha Analytics LLP. All Rights Reserved.</p>
+            </div>
+        </div>
+
+        <!-- Back to top button -->
+        <button id="back-to-top" class="fixed bottom-8 right-8 bg-brand-teal text-white p-3 rounded-full shadow-lg hover:bg-opacity-90 transition opacity-0 transform translate-y-2 pointer-events-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"></path></svg>
+        </button>
+    </footer>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+             const faqData = [
+                { 
+                    question: "What is Serene Alpha?", 
+                    answer: "Serene Alpha Analytics LLP is a SEBI-registered Category II Alternative Investment Fund (AIF). We specialize in identifying and investing in high-growth, transformative opportunities within the Indian market. Our investment philosophy is built on a data-driven, disciplined framework we call SMART · STEADY · SERENE, which focuses on generating long-term, sustainable wealth for our investors." 
+                },
+                { 
+                    question: "How do I invest with Serene Alpha?", 
+                    answer: "Investing with Serene Alpha is a straightforward process designed for sophisticated investors, including High Net Worth Individuals (HNIs) and family offices. The first step is to get in touch with our team through the contact form on our website. We will then schedule a consultation to understand your investment goals and guide you through the necessary documentation and onboarding process as per SEBI regulations." 
+                },
+                { 
+                    question: "What are the key benefits of investing with Serene Alpha?", 
+                    answer: "Investing with us gives you access to expertly vetted, high-growth opportunities that are typically unavailable to the public. Key benefits include:<br><ul class='list-disc list-inside mt-2 space-y-1'><li><strong>Expert Management:</strong> Our team has decades of experience in financial markets and strategic analysis.</li><li><strong>Data-Driven Insights:</strong> We use advanced analytics and proprietary models to identify micro-trends before they become mainstream.</li><li><strong>Disciplined Approach:</strong> We focus on fundamentally strong companies with clear profitability paths and strong governance, avoiding speculative trends.</li><li><strong>Portfolio Diversification:</strong> Gain exposure to a curated portfolio of sector-agnostic investments, primarily in the promising MSME space.</li></ul>"
+                },
+                { 
+                    question: "What are the fees associated with investing?", 
+                    answer: "As a Category II AIF, our fee structure is transparent and aligned with our investors' success. It typically consists of a management fee, which covers our operational and research costs, and a performance fee (or carried interest), which is charged only after your investment has achieved a predetermined return threshold (hurdle rate). For a detailed breakdown, please refer to the Private Placement Memorandum (PPM) provided during the onboarding process." 
+                },
+                { 
+                    question: "How do I track the performance of my investment?", 
+                    answer: "We believe in complete transparency. Investors receive detailed quarterly reports that include portfolio performance, AUM updates, and insights into our investment strategy. Additionally, we provide secure access to a dashboard where you can monitor your investments and access relevant documents at any time." 
+                },
+                { 
+                    question: "What is the minimum investment amount?", 
+                    answer: "As per SEBI regulations for a Category II AIF, the minimum investment amount is ₹1 Crore. This is applicable to all investors, including individuals, family offices, and corporate bodies." 
+                },
+                { 
+                    question: "How can I get in touch with a financial advisor?", 
+                    answer: "You can easily connect with our team by filling out the form on our 'Contact Us' page. Please provide your details, and one of our relationship managers will get in touch with you promptly to schedule a no-obligation consultation to discuss your financial goals." 
+                },
+                { 
+                    question: "What is the investment strategy at Serene Alpha?", 
+                    answer: "Our strategy is sector-agnostic and fundamentally driven. We focus on identifying long-term, secular growth trends in the Indian economy. We invest in companies with a strong competitive moat, proven execution capabilities, and clean governance. Our 'Invest to Exit' approach means we strategically plan our exit to maximize returns for our investors, typically over a 3-5 year horizon." 
+                },
+                { 
+                    question: "Is my money safe with Serene Alpha?", 
+                    answer: "Client security is our top priority. Serene Alpha is regulated by the Securities and Exchange Board of India (SEBI), which mandates strict compliance and transparency standards. Your funds are held with an independent, SEBI-registered custodian, ensuring a clear separation of assets. While all market-linked investments carry inherent risks, our rigorous due diligence and risk management framework are designed to protect and grow your capital responsibly." 
+                },
+                { 
+                    question: "How frequently will I receive updates on my investments?", 
+                    answer: "We provide comprehensive performance reports to our investors on a quarterly basis. These reports detail the fund's performance, portfolio composition, and our market outlook. We also hold annual investor meetings and are always available to address any queries you may have." 
+                },
+                { 
+                    question: "Can I withdraw my investment anytime?", 
+                    answer: "Alternative Investment Funds (AIFs) are structured as close-ended funds, meaning they are designed for long-term capital appreciation. As such, investments are locked in for the duration of the fund's tenure, which is specified in the Private Placement Memorandum (PPM). This structure allows us to make strategic, long-term investments without the pressure of frequent redemptions. Specific details regarding the fund's tenure and lock-in period will be clearly outlined in the fund documents." 
+                },
+                { 
+                    question: "Do you offer personalized investment strategies?", 
+                    answer: "While our fund operates with a specific, defined investment strategy as outlined in the PPM, we work closely with our investors to understand their financial objectives. For larger institutional clients or family offices, we can explore the possibility of creating bespoke managed accounts or advisory services that align more closely with their specific needs. Please contact us to discuss this further." 
+                }
+            ].slice(0, 3);
+
+            const accordion = document.getElementById('faq-accordion');
+
+            if (accordion) {
+                faqData.forEach((item, index) => {
+                    const faqItem = document.createElement('div');
+                    faqItem.classList.add('faq-item', 'bg-white', 'rounded-lg', 'shadow-sm', 'overflow-hidden');
+
+                    faqItem.innerHTML = `
+                        <button class="faq-question w-full text-left p-6 flex justify-between items-center">
+                            <h3 class="text-lg font-semibold text-brand-dark">${item.question}</h3>
+                            <div class="faq-icon text-brand-teal">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path></svg>
+                            </div>
+                        </button>
+                        <div class="faq-answer px-6 text-gray-600">
+                            <p>${item.answer}</p>
+                        </div>
+                    `;
+                    accordion.appendChild(faqItem);
+                });
+
+                const faqItems = document.querySelectorAll('.faq-item');
+                faqItems.forEach(item => {
+                    const question = item.querySelector('.faq-question');
+                    const answer = item.querySelector('.faq-answer');
+
+                    question.addEventListener('click', () => {
+                        const isActive = item.classList.contains('active');
+                        
+                        faqItems.forEach(otherItem => {
+                            if (otherItem !== item) {
+                                otherItem.classList.remove('active');
+                                otherItem.querySelector('.faq-answer').style.maxHeight = null;
+                            }
+                        });
+
+                        item.classList.toggle('active');
+                        if (item.classList.contains('active')) {
+                            answer.style.maxHeight = answer.scrollHeight + 32 + "px";
+                        } else {
+                            answer.style.maxHeight = null;
+                        }
+                    });
+                });
+            }
+
+            // Mobile menu toggle
+            const menuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            if (menuButton) {
+                menuButton.addEventListener('click', function() {
+                    mobileMenu.classList.toggle('hidden');
+                });
+            }
+
+            // Back to top button
+            const backToTopButton = document.getElementById('back-to-top');
+            if (backToTopButton) {
+                 window.addEventListener('scroll', () => {
+                    if (window.pageYOffset > 300) {
+                        backToTopButton.classList.remove('opacity-0', 'translate-y-2', 'pointer-events-none');
+                    } else {
+                        backToTopButton.classList.add('opacity-0', 'translate-y-2', 'pointer-events-none');
+                    }
+                });
+
+                backToTopButton.addEventListener('click', () => {
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                });
+            }
+        });
+    </script>
+</body>
+</html>
+>>>>>>> 002285cb4b1cac6e35258d2bbd34a3662dd7a0cc
