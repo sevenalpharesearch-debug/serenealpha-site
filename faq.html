@@ -128,9 +128,7 @@
                     <hr class="my-6 border-gray-700">
                     <h4 class="text-lg font-semibold text-white mb-4">Disclaimer</h4>
                     <div class="text-xs text-gray-500 text-justify space-y-1">
-                        <p>By accessing this website, you acknowledge and confirm that you are seeking information voluntarily, without solicitation or inducement by the organization.
-                        Please note that no part of the content should be construed as an offer or solicitation to buy or sell any securities or make any investments or transactions. The information provided here is purely for informational purposes and should not be considered as investment advice.
-                        Any actions you take based on the content of this website are at your own risk and responsibility.</p>
+                        <p>By accessing this website, you acknowledge and confirm that you are a Sophisticated Investor seeking information voluntarily, without solicitation or inducement by the organization. This website and its contents do not constitute a public offer. No part of the content should be construed as an offer or solicitation to buy or sell any securities or make any investments or transactions. The information provided here is purely for informational purposes and should not be considered as investment advice. Any actions you take based on the content of this website are at your own risk and responsibility.</p>
                     </div>
                 </div>
                 <div>
@@ -177,6 +175,11 @@
                         <p><strong>Email:</strong> info@serenealpha.in</p>
                         <p><strong>Phone:</strong> +91 72368 72378</p>
                      </div>
+                     <div class="mt-10 text-sm text-gray-400 space-y-2">
+                        <h4 class="text-lg font-semibold text-white">Grievance Redressal</h4>
+                        <p><strong>Compliance Officer:</strong> CA Garvit Goyal</p>
+                        <p><strong>Phone:</strong> +91 79887 64429</p>
+                     </div>
                 </div>
             </div>
         </div>
@@ -191,9 +194,33 @@
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"></path></svg>
         </button>
     </footer>
+
+    <div id="cookie-banner" class="hidden fixed bottom-6 left-6 right-6 z-[60] rounded-2xl bg-brand-dark text-white shadow-2xl md:left-8 md:right-auto md:max-w-xl">
+        <div class="flex flex-col gap-4 p-5 md:flex-row md:items-end md:justify-between">
+            <div>
+                <p class="text-sm font-semibold text-white">Cookie Notice</p>
+                <p class="mt-1 text-sm text-gray-300">We use cookies to improve website functionality and your browsing experience. By clicking Accept, you consent to our use of cookies.</p>
+            </div>
+            <button id="accept-cookies" type="button" class="shrink-0 rounded-full bg-brand-teal px-5 py-2 text-sm font-semibold text-white transition hover:opacity-90">Accept</button>
+        </div>
+    </div>
     
     <script>
         document.addEventListener('DOMContentLoaded', function () {
+            // Cookie consent
+            const cookieBanner = document.getElementById('cookie-banner');
+            const acceptCookiesButton = document.getElementById('accept-cookies');
+            const cookieConsentKey = 'sereneAlphaCookieConsent';
+            if (cookieBanner && acceptCookiesButton) {
+                if (localStorage.getItem(cookieConsentKey) !== 'accepted') {
+                    cookieBanner.classList.remove('hidden');
+                }
+                acceptCookiesButton.addEventListener('click', function () {
+                    localStorage.setItem(cookieConsentKey, 'accepted');
+                    cookieBanner.classList.add('hidden');
+                });
+            }
+
              const faqData = [
                 { 
                     question: "What is Serene Alpha?", 
